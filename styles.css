@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=EB+Garamond&family=Cinzel:wght@700&display=swap');
+
+/* Estilos gerais */
+body {
+  margin: 0;
+  font-family: 'EB Garamond', serif;
+  background: url('img/fundo.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #d0d0d0;
+}
+
+
+/* Moldura */
+.page-content, .section {
+  border: 2px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  background-color: #111;
+  box-shadow: 0 0 30px rgba(139, 0, 0, 0.5);
+  max-width: 960px;
+  margin: 120px auto 100px;
+}
+
+/* Títulos */
+h1, h2 {
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  font-size: 3rem;
+  color: #eee;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 2px solid #222;
+  z-index: 1100;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1.3rem;
+  font-family: 'Playfair Display', serif;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #b22222;
+}
+
+/* Conteúdo */
+.landing-content,
+.participante,
+.doc-item {
+  background-color: #141414;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 0 20px #000;
+  font-family: 'EB Garamond', serif;
+  line-height: 1.7;
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  text-align: justify;
+}
+
+/* Botões */
+.btn-jogar, .btn-jogar-agora {
+  display: inline-block;
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  border: 2px solid #8b0000;
+  background-color: transparent;
+  color: #8b0000;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #8b0000;
+}
+
+.btn-jogar:hover, .btn-jogar-agora:hover {
+  background-color: #8b0000;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #8b0000, 0 0 40px #5c0000;
+}
+
+/* Botões fixos */
+.jogar-top, .jogar-bottom {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: #0e0e0e;
+  padding: 1rem 0;
+  z-index: 1000;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+.jogar-top {
+  top: 60px;
+}
+
+.jogar-bottom {
+  bottom: 0;
+}
+
+/* Texto animado */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.05); }
+}
+
+.animar-texto {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #8b0000;
+  text-align: center;
+  margin: 2rem auto;
+  animation: pulse 2s infinite;
+  max-width: 90%;
+  text-shadow: 1px 1px 5px #000;
+}
+
+/* Iframe */
+.iframe-container {
+  height: calc(100vh - 220px);
+  background-color: #0f0f0f;
+  border-radius: 8px;
+  box-shadow: 0 0 30px #8b0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  background-color: #000;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #444;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 2px solid #222;
+}
+
+/* Galeria e grid */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.participante, .img-box {
+  width: 200px;
+  text-align: center;
+}
+
+.participante img,
+.img-box img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #222;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px #000;
+}
+/* Estilo para o botão "Jogar Agora" no header */
+.btn-jogar-agora-header {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.5rem 1.3rem;
+  margin-left: 1.5rem;
+  border: 1px solid #5c0000;
+  background-color: #5c0000;
+  color: #f0f0f0;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 0 5px #2a0000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+/* Hover mais sutil */
+.btn-jogar-agora-header:hover {
+  background-color: #3e0000;
+  box-shadow: 0 0 8px #3e0000;
+  transform: scale(1.03);
+}
+
+/* Ajuste do nav para alinhar menu e botão */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+#iframe-container, #jogo, .iframe-container {
+  position: absolute;
+  top: 40px; /* mesma altura da header */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: calc(100vh - 60px); /* altura da viewport menos header */
+  width: 90%;
+}
+
+/* iframe ocupa 100% do container */
+#iframe-container iframe, #jogo iframe, .iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+.slider {
+  width: 100%;
+  max-width: 800px; /* ou o valor desejado */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+  margin-bottom: 2rem;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+}
+
+.slides {
+  position: relative;
+  height: 400px; /* ou ajuste conforme o tamanho das imagens */
+}
+
+.slides img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  margin-left: 1rem;
+}
+.about {
+  font-family: 'EB Garamond', serif;
+  line-height: 1.7;
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  text-align: justify;
+  padding: 2rem;
+  background-color: rgba(10, 10, 10, 0.85);
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #c43;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.about p {
+  width: 100%;
+  text-align: center;
+}
+
+.about h4 {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.about ul.bullet-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style-position: inside;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding-left: 0;
+}
+
+.about ul.bullet-list li {
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+
+.container-imagem-texto {
+    display: flex; /* Transforma o container em um flex container */
+    align-items: center; /* Centraliza verticalmente a imagem e o texto */
+    gap: 20px; /* Adiciona um espaço entre a imagem e o texto (propriedade moderna) */
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 800px; /* Limita a largura para melhor visualização do exemplo */
+    margin: 20px auto; /* Centraliza o container na página */
+}
+
+.container-imagem-texto img {
+    max-width: 200px; /* Define uma largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Adiciona um pouco de estilo */
+}
+
+.conteudo-texto {
+    flex: 1; /* Permite que o conteúdo de texto ocupe o espaço restante */
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LIFE-TIME</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Libre+Baskerville&family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Logo LIFE-TIME" />
+      </a>
+      <ul class="menu">
+        <li><a href="index.html">Introdução</a></li>
+        <li><a href="documentacao.html">Documentação</a></li>
+        <li><a href="participantes.html">Participantes</a></li>
+      </ul>
+      <a href="jogar.html" class="btn-jogar-agora">Jogar Agora</a>
+    </nav>
+  </header>
+
+  <section id="landing" class="section">
+    <div class="slider">
+        <div class="slides">
+            <img src="img/cidade.png" alt="Slide 1">
+            <img src="img/Life time.png" alt="Slide 2">
+            <img src="img/silas.png" alt="Slide 3">
+        </div>
+    </div>
+    
+    <div class="landing-content">
+      <div class="about">
+  <h1>Life - Time</h1>
+
+  <h2>⏳ <strong>Bem-vindo ao eterno 23h59</strong></h2>
+  <h4><em>Um instante preso no tempo. Uma alma em busca de purgação.</em></h4>
+
+  <p>
+    Silas Vael acordou quando o mundo parou.<br>
+    Agora, entre sombras e sussurros, ele caminha por um presente infinito —<br>
+    um limbo onde as almas vagam e os pecados ganham forma.<br>
+    Em <strong>LIFE-TIME</strong>, o tempo é seu maior inimigo... e sua única chance de salvação.
+  </p>
+
+  <p>
+    Prepare-se para uma experiência narrativa intensa com mecânicas de <strong>first-person shooter</strong>,<br>
+    onde vícios, desejos e traumas se transformam em demônios reais.<br>
+    Enfrente o inferno interno de Silas — e talvez o seu também.
+  </p>
+
+  <ul class="bullet-list">
+    <li>🔫 Armas com personalidade.</li>
+    <li>🕯️ Inimigos que representam o que há de mais sombrio na alma humana.</li>
+    <li>🧠 Uma jornada de dor, redenção e escolhas.</li>
+  </ul>
+
+  <p><strong>O tempo parou. Mas sua alma ainda pode se mover.</strong><br>
+  Você vai lutar... ou se render?</p>
+</div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© LIFE-TIME - Projeto Acadêmico</p>
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    function showSlides() {
+      slides.forEach((slide, i) => {
+        slide.style.display = i === slideIndex ? 'block' : 'none';
+      });
+      slideIndex = (slideIndex + 1) % slides.length;
+      setTimeout(showSlides, 3000);
+    }
+    if (slides.length > 0) showSlides();
+  </script>
+</body>
+<script src="slider.js"></script>
+</html>

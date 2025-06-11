@@ -22,7 +22,7 @@ body {
 }
 
 /* Títulos */
-h1, h2, {
+h1, h2 {
   font-family: 'Cinzel', serif;
   text-align: center;
   font-size: 3rem;

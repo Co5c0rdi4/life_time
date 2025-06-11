@@ -161,5 +161,17 @@
   </footer>
 
   <script src="slider.js"></script>
+        <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    function showSlides() {
+      slides.forEach((slide, i) => {
+        slide.style.display = i === slideIndex ? 'block' : 'none';
+      });
+      slideIndex = (slideIndex + 1) % slides.length;
+      setTimeout(showSlides, 3000);
+    }
+    if (slides.length > 0) showSlides();
+  </script>
 </body>
 </html>

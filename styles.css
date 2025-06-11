@@ -359,24 +359,3 @@ nav {
 .conteudo-texto {
     flex: 1; /* Permite que o conteúdo de texto ocupe o espaço restante */
 }
-
-.image-container {
-  position: relative;
-  display: inline-block;
-}
-
-.image-container img {
-  display: block;
-  width: 100%;
-}
-
-.image-text {
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 5px 10px;
-  font-size: 18px;
-  border-radius: 5px;
-}

@@ -359,3 +359,13 @@ nav {
 .conteudo-texto {
     flex: 1; /* Permite que o conteúdo de texto ocupe o espaço restante */
 }
+
+.personagens{
+  h3 {
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+  font-size: 1.8rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+}

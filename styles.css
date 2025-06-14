@@ -360,11 +360,10 @@ nav {
     flex: 1; /* Permite que o conteúdo de texto ocupe o espaço restante */
 }
 
-.personagens{
+.personagens, .testo_gdd{
     font-family: 'Cinzel', serif;
     text-align: left;
     font-size: 1.0rem;
     color: #ccc;
     margin-bottom: 0.5rem;
-
 }
